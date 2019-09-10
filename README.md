@@ -9,6 +9,10 @@ As a stand-alone app:
   
 If you would like to make your own changes to the program, clone the repo, and load the project from HISE.
 
+Here is a youtube link showcasing the features of SoftSynth!
+https://youtu.be/Fvi8Df1qNI8?t=25
+
+
     SoftSynth is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
     the Free Software Foundation, either version 3 of the License, or
