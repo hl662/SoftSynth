@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Preset Version="1.0.0">
+  <Content Processor="Interface">
+    <Control type="ScriptSlider" id="Knob1" value="5"/>
+    <Control type="ScriptButton" id="Button1" value="0"/>
+    <Control type="ScriptTable" id="tbl" value="0" data="84...............vOMBBE8bs6F7C...vOwrrR9fg8n8C...vOCaGm9z2Tv7C...vO5m059nImE7C...vOVF9J+vM6w6C...vO...f+....9C...vO"/>
+    <Control type="ScriptSlider" id="MasterGain" value="2.7000015"/>
+    <Control type="ScriptButton" id="lockGain" value="1"/>
+    <Control type="ScriptComboBox" id="WaveTwoType" value="1"/>
+    <Control type="ScriptComboBox" id="WaveOneType" value="4"/>
+    <Control type="ScriptSlider" id="WaveMix" value="0.82439099"/>
+    <Control type="ScriptSlider" id="Detune" value="0.93339852"/>
+    <Control type="ScriptSlider" id="Voices" value="6"/>
+    <Control type="ScriptSlider" id="Width" value="0.81575775"/>
+    <Control type="ScriptSlider" id="Drive" value="7"/>
+    <Control type="ScriptSlider" id="SaturationMix" value="0.12654673"/>
+    <Control type="ScriptSlider" id="ReverbWet" value="0.54"/>
+    <Control type="ScriptSlider" id="Size" value="0.92251532"/>
+    <Control type="ScriptButton" id="lockReverb" value="0"/>
+    <Control type="ScriptSlider" id="DelayMix" value="0.88011059"/>
+    <Control type="ScriptSlider" id="Feedback" value="26"/>
+    <Control type="ScriptButton" id="lockDelay" value="0"/>
+    <Control type="ScriptButton" id="Randomize All" value="0"/>
+    <Control type="ScriptSlider" id="KnobRange" value="0"/>
+    <Control type="ScriptButton" id="Update" value="0"/>
+    <Control type="ScriptButton" id="lockSaturator" value="0"/>
+    <Control type="ScriptButton" id="lockSynthesizer" value="0"/>
+  </Content>
+  <MidiAutomation/>
+  <MPEData Enabled="0"/>
+</Preset>

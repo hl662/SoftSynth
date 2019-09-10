@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<samplemap SaveMode="2" ID="MusicBox" RRGroupAmount="1" MicPositions=";">
+  <sample Root="57" LoKey="57" HiKey="58" LoVel="0" HiVel="127" RRGroup="1"
+          FileName="{PROJECT_FOLDER}Musicbox_A0_0_127.wav" Duplicate="0"
+          MonolithOffset="0" MonolithLength="225280" SampleRate="44100"
+          SampleStartMod="800"/>
+  <sample Root="69" LoKey="69" HiKey="70" LoVel="0" HiVel="127" RRGroup="1"
+          FileName="{PROJECT_FOLDER}Musicbox_A1_0_127.wav" Duplicate="0"
+          MonolithOffset="225280" MonolithLength="159744" SampleRate="44100"
+          SampleStartMod="800"/>
+  <sample Root="59" LoKey="59" HiKey="60" LoVel="0" HiVel="127" RRGroup="1"
+          FileName="{PROJECT_FOLDER}Musicbox_B0_0_127.wav" Duplicate="0"
+          MonolithOffset="385024" MonolithLength="212992" SampleRate="44100"
+          SampleStartMod="800"/>
+  <sample Root="71" LoKey="71" HiKey="72" LoVel="0" HiVel="127" RRGroup="1"
+          FileName="{PROJECT_FOLDER}Musicbox_B1_0_127.wav" Duplicate="0"
+          MonolithOffset="598016" MonolithLength="118784" SampleRate="44100"
+          SampleStartMod="800"/>
+  <sample Root="61" LoKey="61" HiKey="65" LoVel="0" HiVel="127" RRGroup="1"
+          FileName="{PROJECT_FOLDER}Musicbox_C#1_0_127.wav" Duplicate="0"
+          MonolithOffset="716800" MonolithLength="282624" SampleRate="44100"
+          SampleStartMod="800"/>
+  <sample Root="73" LoKey="73" HiKey="73" LoVel="0" HiVel="127" RRGroup="1"
+          FileName="{PROJECT_FOLDER}Musicbox_C#2_0_127.wav" Duplicate="0"
+          MonolithOffset="999424" MonolithLength="126976" SampleRate="44100"
+          SampleStartMod="800"/>
+  <sample Root="50" LoKey="50" HiKey="51" LoVel="0" HiVel="127" RRGroup="1"
+          FileName="{PROJECT_FOLDER}Musicbox_D0_0_127.wav" Duplicate="0"
+          MonolithOffset="1126400" MonolithLength="225280" SampleRate="44100"
+          SampleStartMod="800"/>
+  <sample Root="74" LoKey="74" HiKey="75" LoVel="0" HiVel="127" RRGroup="1"
+          FileName="{PROJECT_FOLDER}Musicbox_D2_0_127.wav" Duplicate="0"
+          MonolithOffset="1351680" MonolithLength="143360" SampleRate="44100"
+          SampleStartMod="800"/>
+  <sample Root="52" LoKey="52" HiKey="53" LoVel="0" HiVel="127" RRGroup="1"
+          FileName="{PROJECT_FOLDER}Musicbox_E0_0_127.wav" Duplicate="0"
+          MonolithOffset="1495040" MonolithLength="262144" SampleRate="44100"
+          SampleStartMod="800"/>
+  <sample Root="76" LoKey="76" HiKey="76" LoVel="0" HiVel="127" RRGroup="1"
+          FileName="{PROJECT_FOLDER}Musicbox_E2_0_127.wav" Duplicate="0"
+          MonolithOffset="1757184" MonolithLength="131072" SampleRate="44100"
+          SampleStartMod="800"/>
+  <sample Root="54" LoKey="54" HiKey="56" LoVel="0" HiVel="127" RRGroup="1"
+          FileName="{PROJECT_FOLDER}Musicbox_F#0_0_127.wav" Duplicate="0"
+          MonolithOffset="1888256" MonolithLength="196608" SampleRate="44100"
+          SampleStartMod="800"/>
+  <sample Root="66" LoKey="66" HiKey="68" LoVel="0" HiVel="127" RRGroup="1"
+          FileName="{PROJECT_FOLDER}Musicbox_F#1_0_127.wav" Duplicate="0"
+          MonolithOffset="2084864" MonolithLength="163840" SampleRate="44100"
+          SampleStartMod="800"/>
+</samplemap>

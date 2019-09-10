@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ContentProperties DeviceType="Desktop">
+  <Component type="ScriptSlider" id="Knob1" x="427" y="292" text="Rate" isPluginParameter="1"
+             tooltip="Control the rate of the LFO" processorId="LFO Modulator2"
+             parameterId="Frequency" mode="TempoSync" max="18" stepSize="1"
+             middlePosition="9"/>
+  <Component type="ScriptButton" id="Button1" x="427" y="258" text="Randomize"/>
+  <Component type="ScriptTable" id="tbl" x="394" y="351" width="191" height="115"
+             processorId="Global Time Variant Modulator1"/>
+  <Component type="ScriptPanel" id="Master" x="384" y="13" width="201" height="74">
+    <Component type="ScriptSlider" id="MasterGain" x="33" y="13" parentComponent="Master"
+               text="Master Gain" processorId="Simple Gain1" parameterId="Gain"
+               min="-100" max="36" stepSize="0.1" middlePosition="0" isPluginParameter="1"
+               tooltip="Controls the master volume"/>
+  </Component>
+  <Component type="ScriptPanel" id="MainSynthComponents" x="19" y="19" width="335"
+             height="178" processorId="Waveform Generator1">
+    <Component type="ScriptComboBox" id="WaveTwoType" x="189" y="16" text="WaveType 2"
+               parentComponent="MainSynthComponents" processorId="Waveform Generator2"
+               parameterId="WaveForm2" items="Sine&#10;Triangle&#10;Saw&#10;Square&#10;&#10;"
+               max="4"/>
+    <Component type="ScriptComboBox" id="WaveOneType" x="10" y="16" max="4"
+               text="Wave Type" parentComponent="MainSynthComponents" processorId="Waveform Generator2"
+               parameterId="WaveForm1" items="Sine&#10;Triangle&#10;Saw&#10;Square&#10;"/>
+    <Component type="ScriptSlider" id="WaveMix" x="10" y="56" parentComponent="MainSynthComponents"
+               processorId="Waveform Generator2" parameterId="Mix" text="Wave Blender"
+               isPluginParameter="1" tooltip="Control the mix between the two waves selected"/>
+    <Component type="ScriptSlider" id="Detune" x="10" y="114" parentComponent="MainSynthComponents"
+               processorId="Syntesizer Group1" parameterId="UnisonoDetune" isPluginParameter="1"
+               tooltip="Controls the amount of detune (enable multiple voices)"/>
+    <Component type="ScriptSlider" id="Voices" x="189" y="114" parentComponent="MainSynthComponents"
+               processorId="Syntesizer Group1" parameterId="UnisonoVoiceAmount"
+               min="1" max="16" stepSize="1" defaultValue="1" isPluginParameter="1"
+               tooltip="Controls the number of voices"/>
+    <Component type="ScriptSlider" id="Width" x="190" y="60" parentComponent="MainSynthComponents"
+               processorId="Syntesizer Group1" parameterId="UnisonoSpread" max="2"
+               mode="NormalizedPercentage" middlePosition="1" defaultValue="1"
+               isPluginParameter="1" tooltip="Control the stereo width"/>
+  </Component>
+  <Component type="ScriptPanel" id="Saturation" x="19" y="218" width="335"
+             height="88">
+    <Component type="ScriptSlider" id="Drive" x="10" y="16" parentComponent="Saturation"
+               macroControl="Macro 1" min="1" max="127" stepSize="1" isPluginParameter="1"
+               tooltip="Controls the aggressiveness of the distortion"/>
+    <Component type="ScriptSlider" id="SaturationMix" x="189" y="16" parentComponent="Saturation"
+               text="Mix" processorId="Saturator1" parameterId="WetAmount" isPluginParameter="1"
+               tooltip="Controls the amount of distortion"/>
+  </Component>
+  <Component type="ScriptPanel" id="Reverb" x="199" y="331" width="157" height="140">
+    <Component type="ScriptSlider" id="ReverbWet" x="8" y="78" parentComponent="Reverb"
+               text="Reverb Wet" processorId="Simple Reverb1" parameterId="WetLevel"
+               mode="NormalizedPercentage" suffix="%" middlePosition="0.5" isPluginParameter="1"
+               tooltip="Controls rthe amount of reverb"/>
+    <Component type="ScriptSlider" id="Size" x="8" y="12" parentComponent="Reverb"
+               processorId="Simple Reverb1" parameterId="RoomSize" mode="NormalizedPercentage"
+               suffix="%" middlePosition="0.5" isPluginParameter="1" tooltip="Controls the size of the reverb"/>
+  </Component>
+  <Component type="ScriptPanel" id="Delay" x="19" y="332" width="153" height="138">
+    <Component type="ScriptSlider" id="DelayMix" x="10" y="78" parentComponent="Delay"
+               text="Delay Wet" processorId="Delay1" parameterId="Mix" mode="NormalizedPercentage"
+               suffix="%" middlePosition="0.5" isPluginParameter="1" tooltip="Controls the amount of delay"/>
+    <Component type="ScriptSlider" id="Feedback" x="10" y="12" parentComponent="Delay"
+               macroControl="Macro 2" min="1" max="127" stepSize="1" isPluginParameter="1"
+               tooltip="Controls the amount of feedback from delay"/>
+  </Component>
+  <Component type="ScriptButton" id="Randomize All" x="427" y="220" processorId="Syntesizer Group1"
+             isMetaParameter="1"/>
+</ContentProperties>

@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Processor Type="SynthChain" ID="CamelCase" Bypassed="0" Gain="1" Balance="0"
+           VoiceLimit="64" KillFadeTime="20" IconColour="0" packageName=""
+           BuildVersion="650">
+  <ChildProcessors>
+    <Processor Type="MidiProcessorChain" ID="Midi Processor" Bypassed="0">
+      <ChildProcessors>
+        <Processor Type="ScriptProcessor" ID="Interface" Bypassed="0">
+          <ChildProcessors/>
+          <Content>
+            <Control type="ScriptSlider" id="Knob1" value="10"/>
+            <Control type="ScriptButton" id="Button1" value="0"/>
+            <Control type="ScriptTable" id="tbl" value="0" data="84...............vORYYh9fyBv8C...vOODCn9vE+qvC...vO4Yxt9Hnv+8C...vOk4519fppY1C...vOzuqM+zb5+7C...vO...f+....9C...vO"/>
+            <Control type="ScriptSlider" id="MasterGain" value="-73"/>
+            <Control type="ScriptComboBox" id="WaveTwoType" value="4"/>
+            <Control type="ScriptComboBox" id="WaveOneType" value="3"/>
+            <Control type="ScriptSlider" id="WaveMix" value="0.74381488"/>
+            <Control type="ScriptSlider" id="Detune" value="0.58120062"/>
+            <Control type="ScriptSlider" id="Voices" value="6"/>
+            <Control type="ScriptSlider" id="Width" value="1.0206079"/>
+            <Control type="ScriptSlider" id="Drive" value="1"/>
+            <Control type="ScriptSlider" id="SaturationMix" value="0.27064777"/>
+            <Control type="ScriptSlider" id="ReverbWet" value="0.85811131"/>
+            <Control type="ScriptSlider" id="Size" value="0.43912309"/>
+            <Control type="ScriptSlider" id="DelayMix" value="0.28999999"/>
+            <Control type="ScriptSlider" id="Feedback" value="46"/>
+            <Control type="ScriptButton" id="Randomize All" value="0"/>
+          </Content>
+          <UIData Source="CamelCaseUIData"/>
+        </Processor>
+      </ChildProcessors>
+    </Processor>
+    <Processor Type="ModulatorChain" ID="GainModulation" Bypassed="0" Intensity="1">
+      <ChildProcessors/>
+    </Processor>
+    <Processor Type="ModulatorChain" ID="PitchModulation" Bypassed="1" Intensity="0">
+      <ChildProcessors/>
+    </Processor>
+    <Processor Type="EffectChain" ID="FX" Bypassed="0">
+      <ChildProcessors/>
+    </Processor>
+    <Processor Type="GlobalModulatorContainer" ID="Global Modulator Container1"
+               Bypassed="0" Gain="0.25" Balance="0" VoiceLimit="256" KillFadeTime="20"
+               IconColour="0">
+      <ChildProcessors>
+        <Processor Type="MidiProcessorChain" ID="Midi Processor" Bypassed="0">
+          <ChildProcessors/>
+        </Processor>
+        <Processor Type="ModulatorChain" ID="Global Modulators" Bypassed="0" Intensity="1">
+          <ChildProcessors>
+            <Processor Type="LFO" ID="LFO Modulator2" Bypassed="0" Intensity="1" Frequency="10"
+                       FadeIn="5.0100002" WaveformType="3" Legato="0" TempoSync="1"
+                       SmoothingTime="2.46" LoopEnabled="1" CustomWaveform="24...............vO...f+....9C...vO"
+                       StepData="64....f+....9C...3O...f+....9C...3O...f+....9C...3O...f+....9C...3O...f+....9C...3O...f+.">
+              <ChildProcessors>
+                <Processor Type="ModulatorChain" ID="LFO Intensity Mod" Bypassed="0" Intensity="1">
+                  <ChildProcessors/>
+                </Processor>
+                <Processor Type="ModulatorChain" ID="LFO Frequency Mod" Bypassed="0" Intensity="1">
+                  <ChildProcessors/>
+                </Processor>
+              </ChildProcessors>
+            </Processor>
+          </ChildProcessors>
+        </Processor>
+        <Processor Type="ModulatorChain" ID="PitchModulation" Bypassed="0" Intensity="0">
+          <ChildProcessors/>
+        </Processor>
+        <Processor Type="EffectChain" ID="FX" Bypassed="0">
+          <ChildProcessors/>
+        </Processor>
+      </ChildProcessors>
+      <RoutingMatrix NumSourceChannels="2" Channel0="0" Send0="-1" Channel1="1" Send1="-1"/>
+    </Processor>
+    <Processor Type="SynthGroup" ID="Syntesizer Group1" Bypassed="0" Gain="1"
+               Balance="0" VoiceLimit="256" KillFadeTime="20" IconColour="0"
+               EnableFM="1" CarrierIndex="-1" ModulatorIndex="1" UnisonoVoiceAmount="1"
+               UnisonoDetune="0.57936788" UnisonoSpread="0.53367805" KillSecondVoices="1">
+      <ChildProcessors>
+        <Processor Type="MidiProcessorChain" ID="Midi Processor" Bypassed="0">
+          <ChildProcessors/>
+        </Processor>
+        <Processor Type="ModulatorChain" ID="GainModulation" Bypassed="0" Intensity="1">
+          <ChildProcessors>
+            <Processor Type="SimpleEnvelope" ID="DefaultEnvelope" Bypassed="0" Monophonic="0"
+                       Retrigger="1" Intensity="1" Attack="13" Release="0" LinearMode="0">
+              <ChildProcessors>
+                <Processor Type="ModulatorChain" ID="Attack Time Modulation" Bypassed="0"
+                           Intensity="1">
+                  <ChildProcessors/>
+                </Processor>
+              </ChildProcessors>
+            </Processor>
+            <Processor Type="GlobalTimeVariantModulator" ID="Global Time Variant Modulator1"
+                       Bypassed="0" Intensity="1" UseTable="1" Inverted="0" TableData="84...............vORYYh9fyBv8C...vOODCn9vE+qvC...vO4Yxt9Hnv+8C...vOk4519fppY1C...vOzuqM+zb5+7C...vO...f+....9C...vO"
+                       Connection="Global Modulator Container1:LFO Modulator2">
+              <ChildProcessors/>
+            </Processor>
+          </ChildProcessors>
+        </Processor>
+        <Processor Type="ModulatorChain" ID="PitchModulation" Bypassed="0" Intensity="0">
+          <ChildProcessors/>
+        </Processor>
+        <Processor Type="EffectChain" ID="FX" Bypassed="0">
+          <ChildProcessors>
+            <Processor Type="SimpleReverb" ID="Simple Reverb1" Bypassed="0" RoomSize="0.97075248"
+                       Damping="0.51999998" WetLevel="0.051324759" DryLevel="0.94867522"
+                       Width="0.99000001" FreezeMode="0.1">
+              <ChildProcessors/>
+              <RoutingMatrix NumSourceChannels="2" Channel0="0" Send0="-1" Channel1="1" Send1="-1"/>
+            </Processor>
+            <Processor Type="Delay" ID="Delay1" Bypassed="0" DelayTimeLeft="8" DelayTimeRight="9"
+                       FeedbackLeft="0.36220473" FeedbackRight="0.36220473" LowPassFreq="20000"
+                       HiPassFreq="40" Mix="0.28999999" TempoSync="1">
+              <ChildProcessors/>
+              <RoutingMatrix NumSourceChannels="2" Channel0="0" Send0="-1" Channel1="1" Send1="-1"/>
+            </Processor>
+            <Processor Type="Saturator" ID="Saturator1" Bypassed="0" Saturation="0.0078740157"
+                       WetAmount="0.12607458" PreGain="0" PostGain="-0.17322811">
+              <ChildProcessors>
+                <Processor Type="ModulatorChain" ID="Saturation Modulation" Bypassed="0"
+                           Intensity="1">
+                  <ChildProcessors/>
+                </Processor>
+              </ChildProcessors>
+              <RoutingMatrix NumSourceChannels="2" Channel0="0" Send0="-1" Channel1="1" Send1="-1"/>
+            </Processor>
+            <Processor Type="SimpleGain" ID="Simple Gain1" Bypassed="0" Gain="12" Delay="0"
+                       Width="100" Balance="-9">
+              <ChildProcessors>
+                <Processor Type="ModulatorChain" ID="Gain Modulation" Bypassed="0" Intensity="1">
+                  <ChildProcessors/>
+                </Processor>
+                <Processor Type="ModulatorChain" ID="Delay Modulation" Bypassed="0" Intensity="1">
+                  <ChildProcessors/>
+                </Processor>
+                <Processor Type="ModulatorChain" ID="Width Modulation" Bypassed="0" Intensity="1">
+                  <ChildProcessors/>
+                </Processor>
+                <Processor Type="ModulatorChain" ID="Pan Modulation" Bypassed="0" Intensity="1">
+                  <ChildProcessors/>
+                </Processor>
+              </ChildProcessors>
+              <RoutingMatrix NumSourceChannels="2" Channel0="0" Send0="-1" Channel1="1" Send1="-1"/>
+            </Processor>
+          </ChildProcessors>
+        </Processor>
+        <Processor Type="ModulatorChain" ID="Detune Mod" Bypassed="1" Intensity="1">
+          <ChildProcessors/>
+        </Processor>
+        <Processor Type="ModulatorChain" ID="Spread Mod" Bypassed="1" Intensity="1">
+          <ChildProcessors/>
+        </Processor>
+        <Processor Type="WaveSynth" ID="Waveform Generator2" Bypassed="0" Gain="0.25"
+                   Balance="0" VoiceLimit="256" KillFadeTime="20" IconColour="0"
+                   OctaveTranspose1="0" OctaveTranspose2="-5" Detune1="-0.18000001"
+                   Detune2="-6.02" WaveForm1="3" WaveForm2="4" Pan1="-43" Pan2="0"
+                   Mix="0.025722466" EnableSecondOscillator="1" PulseWidth1="0.5"
+                   PulseWidth2="0.5">
+          <ChildProcessors>
+            <Processor Type="MidiProcessorChain" ID="Midi Processor" Bypassed="0">
+              <ChildProcessors/>
+            </Processor>
+            <Processor Type="ModulatorChain" ID="GainModulation" Bypassed="0" Intensity="1">
+              <ChildProcessors/>
+            </Processor>
+            <Processor Type="ModulatorChain" ID="PitchModulation" Bypassed="0" Intensity="0">
+              <ChildProcessors/>
+            </Processor>
+            <Processor Type="EffectChain" ID="FX" Bypassed="0">
+              <ChildProcessors/>
+            </Processor>
+            <Processor Type="ModulatorChain" ID="Mix Modulation" Bypassed="0" Intensity="1">
+              <ChildProcessors/>
+            </Processor>
+          </ChildProcessors>
+          <RoutingMatrix NumSourceChannels="2" Channel0="0" Send0="-1" Channel1="1" Send1="-1"/>
+        </Processor>
+      </ChildProcessors>
+      <RoutingMatrix NumSourceChannels="2" Channel0="0" Send0="-1" Channel1="1" Send1="-1"/>
+    </Processor>
+  </ChildProcessors>
+  <RoutingMatrix NumSourceChannels="2" Channel0="0" Send0="-1" Channel1="1" Send1="-1"/>
+  <macro_controls>
+    <macro name="Drive" value="1" midi_cc="-1">
+      <controlled_parameter id="Saturator1" parameter="0" parameter_name="Saturation" min="0"
+                            max="1" low="0" high="1" inverted="0" readonly="1"/>
+      <controlled_parameter id="Saturator1" parameter="3" parameter_name="Post Gain" min="-24"
+                            max="0" low="0" high="-22" inverted="0" readonly="1"/>
+    </macro>
+    <macro name="Feedback" value="46" midi_cc="-1">
+      <controlled_parameter id="Delay1" parameter="2" parameter_name="Left Feedback" min="0"
+                            max="1" low="0" high="1" inverted="0" readonly="1"/>
+      <controlled_parameter id="Delay1" parameter="3" parameter_name="Right Feedback" min="0"
+                            max="1" low="0" high="1" inverted="0" readonly="1"/>
+    </macro>
+    <macro name="Macro 3" value="0" midi_cc="-1"/>
+    <macro name="Macro 4" value="0" midi_cc="-1"/>
+    <macro name="Macro 5" value="0" midi_cc="-1"/>
+    <macro name="Macro 6" value="0" midi_cc="-1"/>
+    <macro name="Macro 7" value="0" midi_cc="-1"/>
+    <macro name="Macro 8" value="0" midi_cc="-1"/>
+  </macro_controls>
+  <MidiAutomation/>
+  <MPEData Enabled="0"/>
+</Processor>
